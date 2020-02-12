@@ -36,7 +36,7 @@ struct Committer {
 /// We currently use the GitHub API to retrieve this list; the GH token
 /// allows you to make this request more often. If it is not provided the
 /// requests issued will be unauthenticated.
-pub async fn commit_list(
+pub async fn master_commits(
     client: &Client,
     token: Option<&str>,
 ) -> Result<Vec<Commit>, Box<dyn std::error::Error + Sync + Send>> {

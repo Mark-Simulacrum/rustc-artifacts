@@ -1,8 +1,11 @@
 [package]
-name = "rust-commits"
+name = "rustc-artifacts"
 version = "0.1.0"
 authors = ["Mark Rousskov <mark.simulacrum@gmail.com>"]
 edition = "2018"
+description = "Access lists of published rustc artifacts"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Mark-Simulacrum/rustc-artifacts"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
