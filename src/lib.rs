@@ -2,7 +2,7 @@ use reqwest::header::USER_AGENT;
 use reqwest::Client;
 use serde_derive::Deserialize;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Commit {
     pub sha: String,
     pub date: chrono::DateTime<chrono::Utc>,
