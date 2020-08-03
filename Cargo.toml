@@ -1,6 +1,6 @@
 [package]
 name = "rustc-artifacts"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Mark Rousskov <mark.simulacrum@gmail.com>"]
 edition = "2018"
 description = "Access lists of published rustc artifacts"
