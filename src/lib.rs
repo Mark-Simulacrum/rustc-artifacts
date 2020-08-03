@@ -3,6 +3,9 @@ use serde_derive::Deserialize;
 #[derive(Debug, Clone, Deserialize)]
 pub struct Commit {
     pub sha: String,
+    /// This is the pull request which this commit merged in.
+    #[serde(default)]
+    pub pr: Option<u32>,
     pub time: chrono::DateTime<chrono::Utc>,
 }
 
