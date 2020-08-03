@@ -3,6 +3,7 @@ use serde_derive::Deserialize;
 #[derive(Debug, Clone, Deserialize)]
 pub struct Commit {
     pub sha: String,
+    pub parent_sha: String,
     /// This is the pull request which this commit merged in.
     #[serde(default)]
     pub pr: Option<u32>,
